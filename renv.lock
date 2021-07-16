@@ -37,6 +37,13 @@
       "Repository": "CRAN",
       "Hash": "56b33b77f4cffd78ff96b8e5a69eabb0"
     },
+    "FSDAM": {
+      "Package": "FSDAM",
+      "Version": "2020.11-18",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "fcb7e1f60e7fa862820a43b974ec57eb"
+    },
     "Formula": {
       "Package": "Formula",
       "Version": "1.2-4",
@@ -1706,6 +1713,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "bb5996d0bd962d214a11140d77589917"
+    },
+    "reticulate": {
+      "Package": "reticulate",
+      "Version": "1.20",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "30ab0ea8c8d3dd16a3fa06903449bbfb"
     },
     "rex": {
       "Package": "rex",
