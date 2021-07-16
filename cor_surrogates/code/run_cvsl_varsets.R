@@ -115,11 +115,8 @@ Z_plus_weights <- dat.ph1 %>%
 # Create combination scores across the 5 markers
 dat.ph2 <- dat.ph2 %>% 
   left_join(get.pca.scores(dat.ph2 %>%
-                             select(Ptid, Day57bindSpike, Day57bindRBD, Day57pseudoneutid50, Day57pseudoneutid80)),
-            by = "Ptid") %>%
-  # left_join(get.nonlinearPCA.scores(dat.ph2 %>%
-  #                                     select(Ptid, Day57bindSpike, Day57bindRBD, Day57pseudoneutid50, Day57pseudoneutid80)),
-  #          by = "Ptid") %>%
+       select(Ptid, Day57bindSpike, Day57bindRBD, Day57pseudoneutid50, Day57pseudoneutid80)), by = "Ptid") %>%
+  left_join(get.nonlinearPCA.scores(dat.ph2 %>% select(Ptid, Day57bindSpike, Day57bindRBD, Day57pseudoneutid50, Day57pseudoneutid80)), by = "Ptid") %>%
   mutate(
     #nlPCA1 = PC1,
     #nlPCA2 = PC2,
